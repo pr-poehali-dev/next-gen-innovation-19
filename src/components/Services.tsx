@@ -2,53 +2,53 @@ import { useEffect, useRef, useState } from "react"
 
 const services = [
   {
-    title: "Жилые интерьеры",
-    description: "Полное преображение дома с учётом вашего образа жизни. От отдельных комнат до целых резиденций.",
+    title: "Дата и место",
+    description: "Торжественная церемония состоится 14 сентября 2026 года. Мы с нетерпением ждём вас рядом в этот день.",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
-          d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
         />
       </svg>
     ),
   },
   {
-    title: "Планировка",
-    description: "Продуманные решения, создающие естественный поток и функциональные зоны для жизни, работы и отдыха.",
+    title: "Церемония",
+    description: "Роспись и клятвы в 14:00. Просим прибыть немного заранее, чтобы занять места и насладиться атмосферой.",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
-          d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
+          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
         />
       </svg>
     ),
   },
   {
-    title: "Подбор материалов",
-    description: "Натуральные материалы и авторские предметы ручной работы, которые красиво стареют и рассказывают историю.",
+    title: "Банкет",
+    description: "Праздничный ужин и танцы начнутся в 16:00. Вечер обещает быть тёплым, вкусным и незабываемым.",
+    icon: (
+      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Дресс-код",
+    description: "Просим придерживаться нежной цветовой палитры: пудровые, бежевые, оливковые и белые тона.",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
           d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Светодизайн",
-    description: "Многоуровневое освещение, меняющееся в течение дня, создающее атмосферу и поддерживающее благополучие.",
-    icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
         />
       </svg>
     ),
@@ -86,14 +86,14 @@ export function Services() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Наши услуги
+            День свадьбы
           </p>
           <h2
             className={`font-serif text-4xl md:text-5xl lg:text-6xl font-light text-foreground text-balance transition-all duration-1000 delay-200 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            Что мы делаем
+            Важные детали
           </h2>
         </div>
 

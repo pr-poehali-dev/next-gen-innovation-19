@@ -32,8 +32,8 @@ export function Philosophy() {
             }`}
           >
             <img
-              src="/minimalist-japanese-interior-design-with-natural-w.jpg"
-              alt="Минималистичный интерьер с натуральным деревом"
+              src="https://cdn.poehali.dev/projects/99da7f23-e3dc-47c7-b815-52d7dafaf5e3/files/e6f3b728-3e2a-4281-9194-e64cf61ba826.jpg"
+              alt="Свадебное оформление в стиле Japandi"
               className="absolute inset-0 w-full h-full object-cover"
             />
             {/* Overlay accent */}
@@ -47,7 +47,7 @@ export function Philosophy() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
             >
-              Наша философия
+              Наша история
             </p>
 
             <h2
@@ -55,10 +55,10 @@ export function Philosophy() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
-              Искусство
-              <span className="italic"> осознанной</span>
+              Встреча,
+              <span className="italic"> изменившая</span>
               <br />
-              жизни
+              всё
             </h2>
 
             <div
@@ -67,13 +67,12 @@ export function Philosophy() {
               }`}
             >
               <p>
-                Мы верим, что каждое пространство таит в себе потенциал для преображения. Не через добавление,
-                а через бережное вычитание — открывая то, что всегда было предначертано.
+                Алина и Дмитрий познакомились совершенно случайно — в тот момент, когда оба меньше всего этого ожидали.
+                Первый взгляд, первый разговор, первое осознание — что этот человек особенный.
               </p>
               <p>
-                Наш подход вдохновлён японской концепцией <em className="text-foreground">ма</em> — глубокой
-                красотой пустоты — и скандинавским пониманием
-                <em className="text-foreground"> хюгге</em>, этого ощущения уютного умиротворения.
+                С тех пор они прошли вместе через многое. И теперь, с трепетом и радостью, они готовы сделать
+                следующий шаг — <em className="text-foreground">навстречу друг другу</em> и всей жизни впереди.
               </p>
             </div>
 
@@ -84,16 +83,16 @@ export function Philosophy() {
               }`}
             >
               <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">12</p>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Лет опыта</p>
+                <p className="font-serif text-3xl md:text-4xl text-sage">3</p>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Года вместе</p>
               </div>
               <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">140+</p>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Проектов</p>
+                <p className="font-serif text-3xl md:text-4xl text-sage">1</p>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Любовь на всю жизнь</p>
               </div>
               <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">8</p>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Наград</p>
+                <p className="font-serif text-3xl md:text-4xl text-sage">∞</p>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Счастливых дней</p>
               </div>
             </div>
           </div>
